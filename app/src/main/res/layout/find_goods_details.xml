@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:padding="5dp">
+
+        <TextView
+            android:text="Goods Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="40sp"/>
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goods ID : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtViewGoodsId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight(KG) : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtViewWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fragile : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtViewFragile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flammable : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtViewFlammable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtViewLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Time : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtViewOrderTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Time : "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtViewLastUpdateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/edTxtGoodsId"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:id="@+id/btnFindGoods"
+                android:layout_height="wrap_content"
+                style="@style/ButtonText"
+                android:background="@drawable/btn_black"
+                android:layout_width="wrap_content"
+                android:text="Find Goods"/>
+        </TableRow>
+    </TableLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layLinearLogs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="Log Record"/>
+
+        <ListView
+            android:id="@+id/lstGoodsLog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

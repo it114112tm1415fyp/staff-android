@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <TableLayout
+            android:id="@+id/layTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Task Details"
+                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:textSize="40sp"/>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Task ID : "
+                    android:textColor="#000"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/taskTaskIdTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#000"
+                    android:textSize="22sp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Task Type : "
+                    android:textColor="#000"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/taskTaskTypeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_margin="10dp"
+                    android:textSize="22sp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Action : "
+                    android:textColor="#000"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/taskActionTv"
+                    android:layout_width="wrap_content"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="22sp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#000"
+                    android:text="Complete : "
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/taskCompleteTv"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="22sp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#000"
+                    android:text="Time : "
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/taskTimeTv"
+                    android:layout_width="wrap_content"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="22sp"/>
+            </TableRow>
+
+            <Button
+                android:id="@+id/btnDoTask"
+                style="@style/ButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_black"
+                android:text="Do Task"
+                android:textSize="22sp"/>
+
+            <Button
+                android:id="@+id/btnStartAllocation"
+                style="@style/ButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_black"
+                android:text="Start Allocation"
+                android:textSize="22sp"/>
+
+            <Button
+                android:id="@+id/btnStopAllocation"
+                style="@style/ButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_black"
+                android:text="Stop Allocation"
+                android:textSize="22sp"/>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <TableLayout
+        android:id="@+id/layTableOrderQueues"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <!--<TextView-->
+        <!--android:id="@+id/txtView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="28sp"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="#000"-->
+        <!--android:layout_margin="10dp"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:text="Contact Details"/>
+
+        <TableRow>
+
+            <TextView
+                android:text="Order ID : "
+                android:layout_margin="10dp"
+                android:textSize="22sp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:id="@+id/txtViewOrderId"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Sender : "
+                android:layout_margin="10dp"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textSize="22sp"
+                android:id="@+id/txtViewSender"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Receiver : "
+                android:layout_margin="10dp"
+                android:textSize="22sp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textSize="22sp"
+                android:id="@+id/txtViewReceiver"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Departure : "
+                android:layout_margin="10dp"
+                android:textSize="22sp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textSize="22sp"
+                android:id="@+id/txtViewDeparture"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Destination : "
+                android:layout_margin="10dp"
+                android:textSize="22sp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:id="@+id/txtViewDestination"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Phone : "
+                android:layout_margin="10dp"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:id="@+id/txtViewPhone"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:text="Available"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                style="@style/ButtonText"
+                android:background="@drawable/btn_green_grass"
+                android:id="@+id/btnAvailable"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <Button
+                android:text="Not Available"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="22sp"
+                android:id="@+id/btnNotAvailable"
+                android:background="@drawable/btn_frech_rose"
+                style="@style/ButtonText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/layLinearOrderInTask"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="Order in Task"/>
+
+        <ListView
+            android:id="@+id/lstOrderInTask"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

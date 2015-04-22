@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:padding="30dp"
+        android:text="Shop Function"/>
+
+    <Button
+        android:id="@+id/btnFindOrder"
+        android:layout_gravity="center"
+        style="@style/ButtonText"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/btn_black"
+        android:text="Find Order"/>
+
+    <Button
+        android:id="@+id/btnFindGoods"
+        android:layout_gravity="center"
+        style="@style/ButtonText"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/btn_black"
+        android:text="Find Goods"/>
+
+</LinearLayout>

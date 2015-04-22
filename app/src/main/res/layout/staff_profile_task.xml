@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFFFFF"
+              android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:text="Staff Profile"
+                android:textSize="40sp"/>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Staff ID : "
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/staffIdTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:text="Name : "
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/staffNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:padding="10dp"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Phone : "
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/staffPhoneTv"
+                    android:layout_width="wrap_content"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:padding="10dp"
+                    android:text="Email : "
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/staffEmailTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:padding="10dp"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Address : "
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:id="@+id/layLinearStaffAddress"
+                    android:textColor="#000"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:padding="10dp"
+                    android:text="Workspace : "
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:textColor="#000"
+                    android:id="@+id/txtViewWorkspace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Register Time : "
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/staffRegisterDate"
+                    android:layout_width="wrap_content"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:padding="10dp"
+                    android:text="Last Modify Time : "
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:textColor="#000"
+                    android:id="@+id/staffLastModifyDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/editPageButton"
+                    style="@style/ButtonText"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_black"
+                    android:text="Edit Profile">
+                </Button>
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/btnRefresh"
+                android:layout_toStartOf="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:text="Today Task"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonText"
+                android:ems="6"
+                android:background="@drawable/btn_black"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Refresh"/>
+        </RelativeLayout>
+
+        <ListView
+            android:layout_below="@+id/layLinear"
+            android:id="@+id/taskListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/textView1">
+        </ListView>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:textColor="#000"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="* Green for completed, Yellow for not completed, Grey for not ready"/>
+    </RelativeLayout>
+
+</LinearLayout>

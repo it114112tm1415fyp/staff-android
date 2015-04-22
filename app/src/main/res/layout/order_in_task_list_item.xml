@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:text="Order ID : "/>
+
+        <TextView
+            android:id="@+id/txtViewOrderId"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="State : "/>
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:id="@+id/txtViewOrderState"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:text="Complete : "/>
+
+        <TextView
+            android:id="@+id/txtViewOrderComplete"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </TableRow>
+</TableLayout>

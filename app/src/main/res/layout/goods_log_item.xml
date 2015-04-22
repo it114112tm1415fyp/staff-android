@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="3dp">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="Staff : "
+            android:padding="3dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtViewStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:textColor="#000000"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="Action : "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtViewAction"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:textColor="#000000"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="Time : "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:textColor="#000000"/>
+    </TableRow>
+</TableLayout>

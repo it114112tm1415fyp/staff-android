@@ -1,0 +1,859 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="15dp"
+    tools:context=".BeltController" >
+
+    <LinearLayout
+        android:id="@+id/tag_MR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Main Roller"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/MR1_Clockwise"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cycle_forward_toggle_bg"
+            android:padding="22dp"
+            android:tag="MainRoller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Clockwise" />
+
+        <ToggleButton
+            android:id="@+id/MR1_Anticlockwise"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cycle_backward_toggle_bg"
+            android:padding="22dp"
+            android:tag="MainRoller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Anticlockwise" />
+
+        <ToggleButton
+            android:id="@+id/MR1_Stop"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/stop_toggle_bg"
+            android:padding="22dp"
+            android:tag="MainRoller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_ST5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stopper 5"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/ST5_Up"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/up_toggle_bg"
+            android:padding="22dp"
+            android:tag="ST" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Up/Down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_CH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@+id/tag_ST5"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Changeover Device 3"
+            android:textSize="18sp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ToggleButton
+                    android:id="@+id/CH3_Up"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/up_toggle_bg"
+                    android:padding="22dp" />
+
+                <ToggleButton
+                    android:id="@+id/CH3_Forward"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/forward_toggle_bg"
+                    android:padding="22dp"
+                    android:tag="ChangeoverDevice3" />
+
+                <ToggleButton
+                    android:id="@+id/CH3_Backward"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backward_toggle_bg"
+                    android:padding="22dp"
+                    android:tag="ChangeoverDevice3" />
+
+                <ToggleButton
+                    android:id="@+id/CH3_Stop"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stop_toggle_bg"
+                    android:padding="22dp"
+                    android:tag="ChangeoverDevice3" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Up/Down" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Forward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Backward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Stop" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_ST6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@+id/tag_CH3"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stopper 6"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/ST6_Up"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/up_toggle_bg"
+            android:padding="22dp"
+            android:tag="ST" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Up/Down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_ST7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:layout_toLeftOf="@+id/tag_CH4"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stopper 7"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/ST7_Up"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/up_toggle_bg"
+            android:padding="22dp"
+            android:tag="ST" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Up/Down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_CH4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:layout_toLeftOf="@+id/tag_ST8"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Changeover Device 4"
+            android:textSize="18sp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ToggleButton
+                    android:id="@+id/CH4_Up"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/up_toggle_bg"
+                    android:padding="22dp" />
+
+                <ToggleButton
+                    android:id="@+id/CH4_Forward"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/forward_toggle_bg"
+                    android:padding="22dp"
+                    android:tag="ChangeoverDevice4" />
+
+                <ToggleButton
+                    android:id="@+id/CH4_Backward"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backward_toggle_bg"
+                    android:padding="22dp"
+                    android:tag="ChangeoverDevice4" />
+
+                <ToggleButton
+                    android:id="@+id/CH4_Stop"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stop_toggle_bg"
+                    android:padding="22dp"
+                    android:tag="ChangeoverDevice4" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Up/Down" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Forward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Backward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Stop" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_ST8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stopper 8"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/ST8_Up"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/up_toggle_bg"
+            android:padding="22dp"
+            android:tag="ST" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Up/Down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_ST3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_toLeftOf="@+id/tag_CH2"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stopper 3"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/ST3_Up"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/up_toggle_bg"
+            android:padding="22dp"
+            android:tag="ST" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Up/Down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_CH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_toLeftOf="@+id/tag_ST4"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Changeover Device 2"
+            android:textSize="18sp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ToggleButton
+                    android:id="@+id/CH2_Up"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/up_toggle_bg"
+                    android:padding="22dp" />
+
+                <ToggleButton
+                    android:id="@+id/CH2_Forward"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/forward_toggle_bg"
+                    android:padding="22dp"
+                    android:tag="ChangeoverDevice2" />
+
+                <ToggleButton
+                    android:id="@+id/CH2_Backward"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backward_toggle_bg"
+                    android:padding="22dp"
+                    android:tag="ChangeoverDevice2" />
+
+                <ToggleButton
+                    android:id="@+id/CH2_Stop"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stop_toggle_bg"
+                    android:padding="22dp"
+                    android:tag="ChangeoverDevice2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Up/Down" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Forward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Backward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Stop" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_ST4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stopper 4"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/ST4_Up"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/up_toggle_bg"
+            android:padding="22dp"
+            android:tag="ST" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Up/Down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_ST1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stopper 1"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/ST1_Up"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/up_toggle_bg"
+            android:padding="22dp"
+            android:tag="ST" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Up/Down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_CH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@+id/tag_ST1"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Changeover Device 1"
+            android:textSize="18sp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ToggleButton
+                    android:id="@+id/CH1_Up"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/up_toggle_bg"
+                    android:padding="22dp" />
+
+                <ToggleButton
+                    android:id="@+id/CH1_Forward"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/forward_toggle_bg"
+                    android:padding="22dp"
+                    android:tag="ChangeoverDevice1" />
+
+                <ToggleButton
+                    android:id="@+id/CH1_Backward"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backward_toggle_bg"
+                    android:padding="22dp"
+                    android:tag="ChangeoverDevice1" />
+
+                <ToggleButton
+                    android:id="@+id/CH1_Stop"
+                    style="@style/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stop_toggle_bg"
+                    android:padding="22dp"
+                    android:tag="ChangeoverDevice1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Up/Down" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Forward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Backward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Stop" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_ST2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@+id/tag_CH1"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stopper 2"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/ST2_Up"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/up_toggle_bg"
+            android:padding="22dp"
+            android:tag="ST" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Up/Down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_CR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tag_CH4"
+        android:layout_alignRight="@+id/tag_CH4"
+        android:layout_centerVertical="true"
+        android:layout_margin="35dp"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Right Crossover Roller"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/CR2_Forward"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/forward_toggle_bg"
+            android:padding="22dp"
+            android:tag="RightCrossoverRoller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Forward" />
+
+        <ToggleButton
+            android:id="@+id/CR2_Backward"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/backward_toggle_bg"
+            android:padding="22dp"
+            android:tag="RightCrossoverRoller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Backward" />
+
+        <ToggleButton
+            android:id="@+id/CR2_Stop"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/stop_toggle_bg"
+            android:padding="22dp"
+            android:tag="RightCrossoverRoller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_CR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tag_CH3"
+        android:layout_alignRight="@+id/tag_CH3"
+        android:layout_centerVertical="true"
+        android:layout_margin="35dp"
+        android:background="@drawable/table"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Left Crossover Roller"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/CR1_Forward"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/forward_toggle_bg"
+            android:padding="22dp"
+            android:tag="LeftCrossoverRoller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Forward" />
+
+        <ToggleButton
+            android:id="@+id/CR1_Backward"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/backward_toggle_bg"
+            android:padding="22dp"
+            android:tag="LeftCrossoverRoller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Backward" />
+
+        <ToggleButton
+            android:id="@+id/CR1_Stop"
+            style="@style/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/stop_toggle_bg"
+            android:padding="22dp"
+            android:tag="LeftCrossoverRoller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stop" />
+    </LinearLayout>
+
+</RelativeLayout>
